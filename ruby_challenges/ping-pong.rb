@@ -5,6 +5,7 @@ port = 6667
 socket = TCPSocket.open(server, port)
 
 nickname = 'Awesome-O'
+user = 'Guest64221'
 channel = '#HAL2000'
 
 
@@ -12,6 +13,7 @@ channel = '#HAL2000'
 socket.puts "NICK #{nickname}"
 socket.puts "USER #{nickname} 0 * #{nickname}"
 socket.puts "JOIN #{channel}"
+
 socket.puts "PRIVMSG #{channel} :I am happy to be here *beep boop*"
  
 while message = socket.gets do

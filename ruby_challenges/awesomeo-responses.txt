@@ -1,1 +1,1 @@
-You are, #{user}.  I'll tell you what.  *beep boop*
+answer = "You are, #{user}.  I'll tell you what.  *beep boop*"

@@ -24,8 +24,8 @@ while message = socket.gets do
   		server = message.split(':').last
   		puts "PONG #{server}"
   		socket.puts "PONG #{server}"
-  	elsif message.match('Awesome-O, whos your best friend?')
-  		puts "PRIVMSG #{channel} :You are, #{user}.  I'll tell you what.  *beep boop*"
+  	elsif message.match('Awesome-O, whos your best friend?') #user input from the internet IRC chatroom
+  		puts "PRIVMSG #{channel} :You are, #{user}.  I'll tell you what.  *beep boop*" #computer's response from the terminal to the IRC chat
   		socket.puts "PRIVMSG #{channel} :You are, #{user}.  I'll tell you what.  *beep boop*"
   	end
 end 
