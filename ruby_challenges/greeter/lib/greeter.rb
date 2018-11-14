@@ -1,5 +1,5 @@
 class Greeter
 	def self.hello
-		puts "HELLO MY FRIEND <3"
+		puts "HELLO M FRIEND <3"
 	end
 end
